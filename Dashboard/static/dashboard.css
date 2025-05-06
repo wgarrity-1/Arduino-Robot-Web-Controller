@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.robot-dashboard {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.robot-status, .robot-controls, .robot-speed {
+	margin: 10px;
+	padding: 20px;
+	max-width: 300px;
+	min-width: 300px;
+	background-color: orange;
+	color: black;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.robot-status .status-row {
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.robot-status .status-row .status-data {
+	display: block;
+}
+
+.robot-status .status-row .status-data {
+	display: block;
+}
+
+.robot-controls .robot-joystick {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.robot-controls .robot-joystick button {
+	background-color: lightblue;
+	font-size: 2rem;
+	min-width: 3rem;
+	min-height: 3rem;
+	margin: 5px;
+	text-align: center;
+	transition: color 0.25s, background-color 0.25s;
+}
+
+.robot-controls .robot-joystick button:hover {
+	color: lightblue;
+	background-color: black;
+}
+
+.robot-controls .robot-joystick button:active {
+	background-color: white;
+}

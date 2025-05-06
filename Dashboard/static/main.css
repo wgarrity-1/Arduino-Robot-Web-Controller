@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 0 0 auto;
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+    background-color: orange;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-top: 2px solid black;
+}
+
+footer .footer-text {
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer .footer-links a {
+    margin-right: 20px;
+    color: white;
+    transition: color 0.2s;
+}
+
+footer .footer-links a:hover {
+    color: black;
+}

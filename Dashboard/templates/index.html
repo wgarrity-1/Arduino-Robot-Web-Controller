@@ -1,0 +1,105 @@
+<!--
+Arduino Robot Control Dashboard - index.html
+William Garrity
+Last modified 5/6/2025
+
+This is the HTML and CSS needed for the Dashboard User Interface
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Robot Control Site</title>
+	<link href="static/main.css" rel="stylesheet" type="text/css">
+	<link href="static/dashboard.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+	<header>
+		<h1>Arduino Robot Control Dashboard</h1>
+	</header>
+	
+	<main>
+		<div class="robot-dashboard">
+			<div class="robot-status">
+				<h2>Status</h2>
+				<div class="status-row">
+					<div class="status-label">Motor Status:</div>
+					<div class="status-data" id="motor-status">On</div>
+				</div>
+				<div class="status-row">
+					<div class="status-label">Front Sonar: </div>
+					<div class="status-data" id="front-sonar-reading">1 in</div>
+				</div>
+				<div class="status-row">
+					<div class="status-label">Back Sonar: </div>
+					<div class="status-data" id="back-sonar-reading">1 in</div>
+				</div>
+				<div class="status-row">
+					<div class="status-label">Left Sonar: </div>
+					<div class="status-data" id="left-sonar-reading">1 in</div>
+				</div>
+				<div class="status-row">
+					<div class="status-label">Right Sonar: </div>
+					<div class="status-data" id="right-sonar-reading">1 in</div>
+				</div>
+			</div>
+
+			<div class="robot-controls">
+				<h2>Controls</h2>
+				
+				<div class="robot-joystick">
+					<div class="joystick-row">
+						<button id="forward-button">
+							<i class="fa fa-arrow-up"></i>
+						</button>
+					</div>
+					<div class="joystick-row">
+						<button id="left-button">
+							<i class="fa fa-arrow-left"></i>
+						</button>
+						<button id="stop-button">
+							<i class="fa fa-stop"></i>
+						</button>
+						<button id="right-button">
+							<i class="fa fa-arrow-right"></i>
+						</button> 
+					</div>
+					<div class="joystick-row">
+						<button id="backward-button">
+							<i class="fa fa-arrow-down"></i>
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="robot-speed">
+				<h2>Speed</h2>
+				<label>Left Motor Speed: </label>
+				<div id="left-speed-out">[VALUE]</div>
+				<input id="left-speed" type="range" min="0" max="255" value="0" class="speed-slider" /> <br />
+				<label>Right Motor Speed: </label>
+				<div id="right-speed-out">[VALUE]</div>
+				<input id="right-speed" type="range" min="0" max="255" value="0" class="speed-slider" /> <br />
+			</div>
+			</div>
+	</main>
+	
+	<footer>
+		<div class="footer-links">
+			<a href="settings.html">Settings</a>
+			<a href="about.html">About</a>
+		</div>
+		<div class="footer-text">Designed by William Garrity</div>
+	</footer>
+	
+		<script src="static/dashboard.js"></script>
+	
+</body>
+</html>
